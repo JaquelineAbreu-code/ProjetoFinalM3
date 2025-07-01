@@ -16,8 +16,6 @@ document.getElementById("buscar").addEventListener("click", () => {
         mostrarMensagem("CEP não encontrado.", true);
       } else {
         const dados = [
-          { label: "Endereço", valor: data.logradouro },
-          { label: "Bairro", valor: data.bairro },
           { label: "Cidade", valor: `${data.localidade} - ${data.uf}` },
           { label: "CEP", valor: data.cep }
         ];
